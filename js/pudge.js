@@ -82,7 +82,7 @@ Pudge.prototype.restoreState=function()
 Pudge.prototype.setupDaggerImage= function()
 {
     this.daggerImage = new Image();
-    this.daggerImage.src='img/link.png';
+    this.daggerImage.src=LINK;
 }
 Pudge.prototype.getGraphicalHookLocation=function()
 {
@@ -118,7 +118,7 @@ Pudge.prototype.setImage = function ()
     this.avatar.onload=function(){
         this.imageLoaded=true;
     };
-    this.avatar.src='img/pudge.png';
+    this.avatar.src=PUDGE;
 }
 Pudge.prototype.doArmorReductions=function(damage)
 {

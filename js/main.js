@@ -373,7 +373,7 @@ function levelFailed()
 function setupVignette()
 {
     vignette = new Image();
-    vignette.src='img/vignette.png';
+    vignette.src=VIGNETTE;
 }
 function setupBackground()
 {
@@ -381,7 +381,7 @@ function setupBackground()
     bg.onload=function(){
         gameTick();
     }
-    bg.src='img/background.png';
+    bg.src=BACKGROUND;
 }
 function drawBackground()
 {

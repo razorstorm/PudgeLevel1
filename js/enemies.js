@@ -294,7 +294,7 @@ function MurlockEnemy(y)
 {
     var xRad=25;
     //(frameCount,folder,x,y,xVel,yVel,xRad,yRad,hp,hpMax,exp,type,damage,minGold,maxGold)
-    this.AbstractEnemy(9,'img/enemies/MurlockBlue', parseInt(xRad*1.5+Math.random() * (GAME_WIDTH-xRad*3)), y, 0,20,xRad,25,25,25,30,1,1,28,40,20);
+    this.AbstractEnemy(9,MURLOCKBLUE, parseInt(xRad*1.5+Math.random() * (GAME_WIDTH-xRad*3)), y, 0,20,xRad,25,25,25,30,1,1,28,40,20);
 }
 copyPrototype(MurlockEnemy,AbstractEnemy);
 
@@ -306,7 +306,7 @@ function SideMurlockTestEnemy(x)
 {
     var yRad=25
     //(frameCount,folder,x,y,xVel,yVel,xRad,yRad,hp,hpMax,exp,type,damage,minGold,maxGold)
-    this.AbstractEnemy(9,'img/enemies/SideMurlockTest', x,parseInt(yRad*1.5+Math.random() * (pudgeYLoc-yRad*3)),  -20,0,yRad,yRad,25,25,30,1,1,28,40,20);
+    this.AbstractEnemy(9,SIDEMURLOCKTEST, x,parseInt(yRad*1.5+Math.random() * (pudgeYLoc-yRad*3)),  -20,0,yRad,yRad,25,25,30,1,1,28,40,20);
 }
 copyPrototype(SideMurlockTestEnemy,AbstractEnemy);
 
@@ -319,7 +319,7 @@ SideMurlockTestEnemy.prototype.draw = function(ctx)
 function CrazyMurlockEnemy(y)
 {
     var xRad=25;
-    this.AbstractFightingEnemy(9,'img/enemies/MurlockBlue', parseInt(xRad*1.5+Math.random() * (GAME_WIDTH-xRad*3)), y, 0,220,xRad,25,8,8,30,1,1000,28,40,20);
+    this.AbstractFightingEnemy(9,MURLOCKBLUE, parseInt(xRad*1.5+Math.random() * (GAME_WIDTH-xRad*3)), y, 0,220,xRad,25,8,8,30,1,1000,28,40,20);
 }
 copyPrototype(CrazyMurlockEnemy,AbstractEnemy);
 

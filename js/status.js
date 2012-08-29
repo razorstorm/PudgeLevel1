@@ -11,10 +11,10 @@ function Status()
 Status.prototype.setupImage = function()
 {
     this.statusPanelImage = new Image();
-    this.statusPanelImage.src='img/statspane.png';
+    this.statusPanelImage.src=STATSPANE;
     
     this.expBarImage = new Image();
-    this.expBarImage.src='img/expBar.png';
+    this.expBarImage.src=EXPBAR;
 }
 
 
