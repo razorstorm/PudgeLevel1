@@ -47,6 +47,47 @@ $ git fetch origin
 $ git checkout gh-pages
 </code></pre>
 
+       <div id='container'>
+            <h1>Random Terror!</h1> Left click to attack, right click to hook. Both attack and hook have cooldowns, hook also has mana cost, look at the HUD to check your mana/hp/cooldowns.
+            <div id="console" ></div>
+            <canvas id="mainScreen" width="1000" height="800">
+            </canvas>
+            <ul id="controls" class="wcMenu">
+                <li><button id='newGameButton'>New Game</button></li>
+                <li><button>Continue</button></li>
+                <li><button>Options</button></li>
+                <li><button>Help</button></li>
+            </ul>
+            <ul id="levelPickMenu" class="hidden">
+                <li><button id='level0'>Level 0</button></li>
+                <li><button disabled id='level1'>Level 1</button></li>
+                <li><button disabled id='level2'>Level 2</button></li>
+                <li><button disabled id='level3'>Level 3</button></li>
+                <li><button disabled id='level4'>Level 4</button></li>
+                <li><button disabled id='level5'>Level 5</button></li>
+                <li><button disabled id='level6'>Level 6</button></li>
+                <li><button disabled id='level7'>Level 7</button></li>
+                <li><button disabled id='level8'>Level 8</button></li>
+                <li><button disabled id='level9'>Level 9</button></li>
+                <li><button disabled id='level10'>Level 10</button></li>
+            </ul>
+            <ul id="levelAction" class="wcMenu hidden">
+                <li><button id='nextLevelButton'>Next Level</button></li>
+                <li><button id='levelSelectionMenu'>Level Selection</button></li>
+                <li><button id="mainMenuButton">Main Menu</button></li>
+                <li><button id="shopButton">Shop</button></li>
+            </ul>
+            <ul id="levelFailedAction" class="wcMenu hidden">
+                <li><button id='levelFailedActionRetryLevelButton'>Retry Level</button></li>
+                <li><button id='levelFailedActionLevelSelectionMenu'>Level Selection</button></li>
+                <li><button id="levelFailedActionMainMenuButton">Main Menu</button></li>
+                <li><button id="levelFailedActionShopButton">Shop</button></li>
+            </ul>
+        </div>
+        <div class="hide" id="sprites">
+            <img src='/img/pudge.png' id="pudgeSprite" alt="pudge"></img>
+        </div>
+
 <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
 <h3>Designer Templates</h3>
