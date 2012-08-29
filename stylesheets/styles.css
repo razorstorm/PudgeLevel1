@@ -1,3 +1,151 @@
+/* 
+    Document   : main
+    Created on : Sep 20, 2011, 9:49:25 PM
+    Author     : jason
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+    top:0px;
+    padding:0px;
+    margin:0px;
+}
+html
+{
+    padding:0px;
+}
+body
+{
+    border:none;
+    /*    margin:0px;*/
+    top:0px;
+}
+h1
+{
+    margin-top:0px;
+}
+#console
+{
+    float:right;
+}
+.hide
+{
+    display:none;
+}
+#container
+{
+    top:0px;
+    margin:0px;
+    height: 100%;
+    position: relative;
+    margin-top:0px;
+    /*    width: 100%;*/
+}
+#levelPickMenu
+{
+    padding:100px;
+    width:800px;
+    height:500px;
+    position:absolute;
+    margin-left:0px;
+    left:0px;
+    top:100px;
+    list-style: none;
+}
+#levelPickMenu li
+{
+    display:table-cell;
+}
+#levelPickMenu li button
+{
+    margin-right: 20px;
+    background:rgba(255,255,255,0.4);
+    border:#e2e33b;
+    border-style:outset;
+}
+#levelPickMenu li button:disabled
+{
+    border-color:gray;
+    border-style:solid;
+}
+#levelPickMenu li button:hover:not(:disabled)
+{
+    background:rgba(255,255,255,0.8);
+}
+#levelPickMenu li button:active:not(:disabled)
+{
+    border-style:inset;
+}
+#levelAction, #levelFailedAction
+{
+    top:200px;
+}
+#controls
+{
+    top:200px;
+}
+.wcMenu
+{
+    padding:0px;
+    margin-left:360px;
+    list-style: none;
+    left: 0;
+    position: absolute;
+    /*    width: 100%;*/
+}
+.wcMenu li
+{
+    width:279px;
+    height:66px;
+    background:url(../img/buttonBackground.png);
+    margin-bottom:20px;
+}
+.wcMenu button
+{
+    background:url(../img/buttonForeground.png);
+    width:226px;
+    height:37px;
+    position:relative;
+    top:12px;
+    left:40px;
+    border:none;
+    color: #e2e33b;
+    font-family: serif;
+    font-size:12pt;
+}
+.wcMenu button:hover
+{
+    background:url(../img/buttonForegroundHover.png);
+}
+.wcMenu button:active
+{
+    top:15px;
+    left:35px;
+}
+.hidden
+{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @font-face {
   font-family: 'OpenSansLight';
   src: url("../fonts/OpenSans-Light-webfont.eot");
