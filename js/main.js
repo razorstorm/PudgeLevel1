@@ -221,8 +221,8 @@ function setMouseXY(e)
     } 
     
     
-    mouseX -= gCanvasElement.position().left;
-    mouseY -= gCanvasElement.position().top;
+    mouseX -= gCanvasElement.offset().left;
+    mouseY -= gCanvasElement.offset().top;
 //    e.preventDefault();
 }
 function handleClick(e,button)
